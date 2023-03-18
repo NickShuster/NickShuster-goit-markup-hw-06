@@ -403,11 +403,10 @@
           </ul>
         </div>
       </div>
-
-      <div class="form-subscribe">
-        <h3 class="contact-title">Subscribe</h3>
+      <div class="container">
         <form class="contact-form">
-          <div class="form-group">
+          <div class="form-div">
+            <p class="contact-title">Subscribe</p>
             <input
               type="email"
               class="contact-form-input"
@@ -415,17 +414,13 @@
               name="e-mail"
               required
             />
+            <button type="submit" class="contact-form-btn btn">
+              Subscribe
+              <svg class="svg-subscribe" width="24" height="20">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
-          <button type="submit" class="contact-form-btn btn">
-            Subscribe
-            <svg class="svg-subscribe">
-              <use
-                href="./images/symbol-defs.svg#icon-icon-send"
-                width="24"
-                height="20"
-              ></use>
-            </svg>
-          </button>
         </form>
       </div>
     </footer>
@@ -478,7 +473,7 @@
               </div>
             </label>
           </div>
-
+          <label class="form-label"><span>Comment</span></label>
           <div class="form-group">
             <textarea
               name="message"
@@ -499,7 +494,14 @@
                   <use href="./images/symbol-defs.svg#icon-vector3"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the Privacy Policy
+              I accept the terms and conditions of the
+              <a
+                href=""
+                class="privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
             </label>
           </div>
           <button type="submit" class="form-btn btn">Send</button>
