@@ -680,6 +680,7 @@ transform: translateY(0);
     width: 169px;
     height: 56px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .form-btn:hover {
@@ -689,7 +690,8 @@ transform: translateY(0);
 
 .form-label {
     position: relative;
-    /* display: block; */
+    display: block;
+    margin-bottom: 8px;
 }
 
 .form-label span{
@@ -700,13 +702,12 @@ transform: translateY(0);
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
-    margin-top: 8px;
 }
 
 .form-icon {
     position: absolute;
-    top: 50%;
-    left: 8px;
+    top: 65%;
+    left: 19px;
     transform: translateY(-50%);
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -743,6 +744,8 @@ transform: translateY(0);
         color: #8E8F99;
         display: flex;
         align-items: center;
+        position: absolute;
+        top: 80%;
     }
 
    .form-checkbox:checked + .form-label-checkbox::before{
